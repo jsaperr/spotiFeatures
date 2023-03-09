@@ -19,6 +19,7 @@ client_secret = "a7370266cffb4f47b674d421927b1feb"
 redirect_uri = "http://localhost:8080/callback"
 scope = "user-library-read playlist-modify-public"
 
+
 # authenticate with the Spotify API
 
 def liked_song_list(playlist_name):
@@ -63,6 +64,24 @@ def liked_song_list(playlist_name):
 
     print(f"Added {total_tracks_added} new tracks to playlist '{playlist_name}'!")
 
+
+'''
+             --      --
+            .:"  | .:'" |
+          --  ___   ___  -
+        /:.  /  .\ /.  \ .\
+       |:|. ;\___/O\___/  :|
+       |:|. |  `__|__'  | .|
+       |:|.  \_,     ,_/  /
+        \______       |__/
+         |:.           \
+        /.:,|  |        \
+       /.:,.|  |         \
+       |::.. \_;_\-;       |
+ _____|::..    .::|       |
+/   ----,     .::/__,    /__,
+\_______|,...____;_;_|../_;_|
+'''
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         client_id=client_id,
